@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>第一页</title>
+	</head>
+	<body>
+		<h1>这是第一页</h1>
+		<input type="button" name="" id="anni" value="进入第二页" onclick="window.location.href='second.html'" />
+		<input type="text" />
+		
+		<p id="myContent"></p>
+	</body>
+	<script type="text/javascript">
+		  
+		var  arr=[
+		    {
+		        id: 1,
+		        name: 'a'
+		    },
+		    {
+		        id: 2,
+		        name: 'b'
+		    },
+		]
+		
+		
+		var obj=arr.find(function (obj) {
+		    return obj.id === 2
+		})
+		console.log(obj);
+		
+		
+		sessionStorage.setItem("id","anni");
+		sessionStorage.setItem("id","LQF");
+	</script>
+</html>

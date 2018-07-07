@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>第二页</title>
+	</head>
+	<body>
+		<h1>这是第二页</h1>
+		<h3 id="show"></h3>
+		<input type="button" value="返回上一页" onclick="window.history.back(-1)" />back(-1)
+		<input type="button" value="进入第三页" onclick="window.location.href='third.html'" />
+		<input type="button" value="进入下一页" onclick="window.history.forward()" />forward()
+		
+		<input type="text" />
+	</body>
+	<script type="text/javascript">
+		var id = sessionStorage.getItem("id");
+		document.getElementById("show").innerHTML = id;
+	</script>
+</html>
